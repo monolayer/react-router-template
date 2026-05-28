@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Drizzle Postgres"
+  short_description: "Add Drizzle and local Postgres setup"
+  default_prompt: "Use $add-drizzle-postgres to add Drizzle ORM and PostgreSQL to this React Router Express app."

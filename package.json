@@ -1,0 +1,48 @@
+{
+  "name": "react-router-node-postgres",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "dotenv -- node server.js",
+    "start": "node server.js",
+    "typecheck": "react-router typegen && tsc -b",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "dependencies": {
+    "@react-router/express": "7.15.1",
+    "@react-router/node": "7.15.1",
+    "compression": "^1.8.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "isbot": "^5.1.36",
+    "morgan": "^1.10.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router": "7.15.1",
+    "vite-plugin-babel": "^1.7.3"
+  },
+  "devDependencies": {
+    "@react-router/dev": "7.15.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.6",
+    "@types/express-serve-static-core": "^5.1.1",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^24",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "dotenv-cli": "^8.0.0",
+    "lint-staged": "^17.0.5",
+    "oxfmt": "^0.52.0",
+    "oxlint": "^1.67.0",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.22.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.3"
+  }
+}
