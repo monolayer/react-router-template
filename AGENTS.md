@@ -89,12 +89,6 @@ When making changes to this codebase, you must preserve the following constraint
 
 - **The NODE_ENV Development invariant:** You must configure `NODE_ENV="development"` in your `.env` file for local development. If omitted or set to any other value, `server.js` attempts to load compiled production files from `./build/server/index.js`, which results in an immediate startup crash when no build folder is present.
 
-## 5. Hard Requirement: Application Data
-
-Any user-created, user-edited, or persisted application data must be stored in PostgreSQL via Drizzle ORM.
-Do not use localStorage, in-memory arrays, mock data persistence, or client-only state as the primary data store unless the user explicitly requests a client-only prototype.
-You must set up and use Drizzle + PostgreSQL by following the `drizzle-postgres` skill before considering the task complete.
-
 ### TypeScript and Compilation Hygiene
 
 - **Unused Type Suppressions:** Do not include redundant or unused `@ts-expect-error` or `@ts-ignore` comments in your server or routing code. All virtual imports (such as `virtual:react-router/server-build`) are automatically typed via `react-router typegen` and must compile cleanly during `npm run typecheck`.
