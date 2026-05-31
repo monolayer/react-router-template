@@ -1,9 +1,3 @@
----
-title: Pending UI and Optimistic Updates
-description: Loading states, optimistic UI, useNavigation, and fetcher states
-tags: [pending-ui, optimistic-ui, loading, useNavigation, useFetcher, spinner]
----
-
 # Pending UI and Optimistic Updates
 
 **Key principle:** Show expected results immediately using `fetcher.formData`, then let React Router sync with the server.

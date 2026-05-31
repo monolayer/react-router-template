@@ -1,9 +1,3 @@
----
-name: react-router-framework-mode
-description: Build full-stack React applications using React Router's framework mode. Use when configuring routes, working with loaders and actions, handling forms, handling navigation, pending/optimistic UI, error boundaries, or working with react-router.config.ts or other react router conventions.
-license: MIT
----
-
 # React Router Framework Mode
 
 Framework mode is React Router's full-stack development experience with file-based routing, server-side, client-side, and static rendering strategies, data loading and mutations, and type-safe route module API.
@@ -22,20 +16,20 @@ Framework mode is React Router's full-stack development experience with file-bas
 
 Load the relevant reference for detailed guidance on the specific API/concept:
 
-| Reference                            | Use When                                              |
-| ------------------------------------ | ----------------------------------------------------- |
-| `references/routing.md`              | Configuring routes, nested routes, dynamic segments   |
-| `references/route-modules.md`        | Understanding all route module exports                |
-| `references/special-files.md`        | Customizing root.tsx, adding global nav/footer, fonts |
-| `references/data-loading.md`         | Loading data with loaders, streaming, caching         |
-| `references/actions.md`              | Handling forms, mutations, validation                 |
-| `references/navigation.md`           | Links, programmatic navigation, redirects             |
-| `references/pending-ui.md`           | Loading states, optimistic UI                         |
-| `references/error-handling.md`       | Error boundaries, error reporting                     |
-| `references/rendering-strategies.md` | SSR vs SPA vs pre-rendering configuration             |
-| `references/middleware.md`           | Adding middleware (requires v7.9.0+)                  |
-| `references/sessions.md`             | Cookie sessions, authentication, protected routes     |
-| `references/type-safety.md`          | Auto-generated route types, type imports, type safety |
+| Reference                                                                      | Use When                                              |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| [routing](react-router-framework-mode/routing.md)                              | Configuring routes, nested routes, dynamic segments   |
+| [route modules](react-router-framework-mode/route-modules.md)                  | Understanding all route module exports                |
+| [Special Files](react-router-framework-mode/special-files.md)                  | Customizing root.tsx, adding global nav/footer, fonts |
+| [Data Loading](react-router-framework-mode/data-loading.md)                    | Loading data with loaders, streaming, caching         |
+| [Actions and Form Handling](react-router-framework-mode/actions.md)            | Handling forms, mutations, validation                 |
+| [Navigation](react-router-framework-mode/navigation.md)                        | Links, programmatic navigation, redirects             |
+| [Pending UI and Optimistic Updates](react-router-framework-mode/pending-ui.md) | Loading states, optimistic UI                         |
+| [Error Handling](react-router-framework-mode/error-handling.md)                | Error boundaries, error reporting                     |
+| [Rendering Strategies](react-router-framework-mode/rendering-strategies.md)    | SSR vs SPA vs pre-rendering configuration             |
+| [Middleware & Context API](react-router-framework-mode/middleware.md)          | Adding middleware (requires v7.9.0+)                  |
+| [Sessions & Cookies](react-router-framework-mode/sessions.md)                  | Cookie sessions, authentication, protected routes     |
+| [Route Module Types](react-router-framework-mode/type-safety.md)               | Auto-generated route types, type imports, type safety |
 
 ## Version Compatibility
 

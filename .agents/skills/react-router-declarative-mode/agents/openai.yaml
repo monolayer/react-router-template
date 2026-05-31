@@ -1,4 +1,0 @@
-interface:
-  display_name: "React Router Declarative Mode"
-  short_description: "Build client-side routes with React Router"
-  default_prompt: "Use $react-router-declarative-mode to add client-side routing to this React app."

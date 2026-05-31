@@ -1,9 +1,3 @@
----
-title: Navigation
-description: Link, NavLink, useNavigate, redirect, and programmatic navigation
-tags: [navigation, Link, NavLink, useNavigate, redirect, prefetch]
----
-
 # Navigation
 
 React Router provides several ways to navigate between routes.
@@ -49,19 +43,13 @@ import { NavLink } from "react-router";
 function Nav() {
   return (
     <nav>
-      <NavLink
-        to="/"
-        end
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
+      <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>
         Home
       </NavLink>
 
       <NavLink
         to="/products"
-        className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
-        }
+        className={({ isActive, isPending }) => (isPending ? "pending" : isActive ? "active" : "")}
       >
         Products
       </NavLink>
@@ -79,9 +67,7 @@ function Nav() {
 
 ```tsx
 <NavLink to="/messages">
-  {({ isActive, isPending }) => (
-    <span>Messages {isPending && <Spinner />}</span>
-  )}
+  {({ isActive, isPending }) => <span>Messages {isPending && <Spinner />}</span>}
 </NavLink>
 ```
 

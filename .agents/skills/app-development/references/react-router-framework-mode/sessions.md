@@ -1,9 +1,3 @@
----
-title: Sessions & Cookies
-description: Cookie-based session management, authentication patterns, protected routes
-tags: [sessions, cookies, authentication, login, logout, protected-routes]
----
-
 # Sessions & Cookies
 
 ## Overview

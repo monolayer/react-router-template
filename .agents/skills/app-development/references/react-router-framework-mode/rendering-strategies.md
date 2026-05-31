@@ -1,9 +1,3 @@
----
-title: Rendering Strategies
-description: SSR, SPA mode, and pre-rendering configuration
-tags: [ssr, spa, prerender, rendering, react-router.config.ts]
----
-
 # Rendering Strategies
 
 React Router supports three rendering strategies, configured in `react-router.config.ts`.

@@ -1,17 +1,3 @@
----
-title: Route Module Types
-description: Auto-generated types, typegen setup, typing loaders/actions/fetchers
-tags:
-  [
-    types,
-    typescript,
-    typegen,
-    Route.LoaderArgs,
-    Route.ComponentProps,
-    useFetcher,
-  ]
----
-
 # Route Module Types
 
 React Router generates route-specific types that provide type inference for URL params, loader data, action data, and more.

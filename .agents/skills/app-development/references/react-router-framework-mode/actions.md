@@ -1,9 +1,3 @@
----
-title: Actions and Form Handling
-description: Form submission patterns, useFetcher, mutations, and validation
-tags: [forms, mutations, useFetcher, Form, action, validation, optimistic-ui]
----
-
 # Actions and Form Handling
 
 Actions handle data mutations (create, update, delete). After an action completes, all loaders on the page automatically revalidate.

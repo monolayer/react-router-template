@@ -1,9 +1,3 @@
----
-title: Data Loading
-description: Server loaders, client loaders, streaming, caching patterns
-tags: [loader, clientLoader, data, streaming, Suspense, defer]
----
-
 # Data Loading
 
 Data is loaded using `loader` (server) and `clientLoader` (browser) functions.
@@ -160,9 +154,7 @@ export default function Product({ loaderData }: Route.ComponentProps) {
       <h1>{loaderData.product.name}</h1>
 
       <Suspense fallback={<ReviewsSkeleton />}>
-        <Await resolve={loaderData.reviews}>
-          {(reviews) => <Reviews items={reviews} />}
-        </Await>
+        <Await resolve={loaderData.reviews}>{(reviews) => <Reviews items={reviews} />}</Await>
       </Suspense>
     </div>
   );

@@ -1,4 +1,0 @@
-interface:
-  display_name: "React Router Framework Mode"
-  short_description: "Build full-stack React applications with React Router's framework mode"
-  default_prompt: "Use $react-router-framework-mode to add server-side routing to this React app."

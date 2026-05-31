@@ -1,10 +1,3 @@
----
-title: Middleware & Context API
-description: Server and client middleware, context API for sharing data
-tags: [middleware, context, authentication, logging, request-processing]
-requires: [react-router@7.9.0+, v8_middleware: true]
----
-
 # Middleware & Context API
 
 ## ⚠️ Version Requirements - Check First!

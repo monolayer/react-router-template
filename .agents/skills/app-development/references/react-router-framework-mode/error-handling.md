@@ -1,9 +1,3 @@
----
-title: Error Handling
-description: ErrorBoundary, error responses, isRouteErrorResponse, error reporting
-tags: [errors, ErrorBoundary, useRouteError, isRouteErrorResponse, 404, 500]
----
-
 # Error Handling
 
 React Router catches errors in loaders, actions, and rendering, then displays them in error boundaries.
