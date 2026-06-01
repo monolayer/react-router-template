@@ -17,11 +17,10 @@ Before implementing any data persistence layers or starting Drizzle migrations, 
 | :------------------------------------------------------------------------------------------------------------------------- | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Static / Ephemeral** (Landing pages, marketing brochures, client-side only calculators, portfolios)                      | **❌ Forbidden (Overengineering)**    | Leverage static rendering, local client-only state, or hardcoded realistic placeholders. **Do not** write Docker Compose configs or configure ORMs. |
 | **Client-Stored / User-Preference** (Dark mode toggle, local-only search history, personal settings)                       | **❌ No Database (Local Only)**       | Use `localStorage` or `cookies` with robust schema versioning and hydration mismatch guards.                                                        |
-| **Stateful / Interactive Prototype** (Interactive e-commerce checkout flow, task board, dashboard prototype)               | **⚠️ Optional (Ask / Mock First)**    | Use local/in-memory mock-data persistence first unless the user explicitly requests persistent backend storage.                                     |
-| **Persistent / Multi-user / Auth-Required** (SaaS apps, user dashboards, custom blogs with CMS, shared real-time canvases) | **✅ Mandatory (Load Drizzle Skill)** | Fully implement Drizzle ORM + PostgreSQL by invoking and following the `@.agents/skills/drizzle-postgres/` skill guidelines.                        |
+| **Stateful / Interactive / Business App** (Inventory tracking, task boards, CRMs, checkout flows, custom blogs, SaaS apps) | **✅ Mandatory (Load Drizzle Skill)** | Fully implement Drizzle ORM + PostgreSQL by invoking and following the `@.agents/skills/drizzle-postgres/` skill guidelines.                        |
 
 > **💡 Directing Data Persistence Tasks:**
-> When the matrix requires a database, the developer **must load and execute the `drizzle-postgres` skill** to handle Docker containers, initial migration bootstrapping, the pool setup on globalThis, and setting up AsyncLocalStorage for request-scoped DB connection contexts.
+> When the matrix requires a database (i.e., for any stateful, interactive, or business application), the developer **must load and execute the `drizzle-postgres` skill** to handle Docker containers, initial migration bootstrapping, the pool setup on globalThis, and setting up AsyncLocalStorage for request-scoped DB connection contexts.
 
 ---
 
